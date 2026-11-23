@@ -31,7 +31,7 @@ Set `DATASET_PATH` in `config.py`, then:
 python run_inference.py
 ```
 
-`DATASET_PATH` can be a `.zip` of DICOMs, a folder of DICOMs, or a `.nii` / `.nii.gz` / `.npy` array ordered (frames, slices, rows, columns). Each slice is centre-cropped or zero-padded to 160 × 96 pixels; 512 × 512 images are halved first.
+`DATASET_PATH` can be a `.zip` of DICOMs, a folder of DICOMs, or a `.nii` / `.nii.gz` / `.npy` array ordered (frames, slices, rows, columns). Each slice is centre-cropped or zero-padded to 160 × 96 pixels, padded or cropped to 28 slices; 512 × 512 images are halved first.
 
 Results go to `output/<dataset name>/`:
 
@@ -48,7 +48,7 @@ A run replaces that dataset's results from any earlier run.
 | Setting | Default | Notes |
 |---|---|---|
 | `BACKEND` | `"DirectML"` | Or `"CPU"`. DirectML falls back to the CPU if it isn't available. |
-| `GIFS` | axial 60, coronal 60 | One GIF per (plane, slice). Axial 0–159, coronal 0–95, sagittal 0 to 4 × slices − 1. |
+| `GIFS` | axial 60, coronal 60 | One GIF per (plane, slice). Axial 0–159, coronal 0–95, sagittal 0 to 27. |
 | `GIF_PANELS` | all four stages | Shown side by side. `("3D_cine",)` gives the super-resolved cine only; `()` turns GIFs off. |
 | `GIF_FPS` | `None` | `None` plays one cardiac cycle per second. |
 | `SAVE_NPY`, `WRITE_DICOM` | `True` | |
