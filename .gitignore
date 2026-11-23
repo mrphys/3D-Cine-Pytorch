@@ -1,0 +1,21 @@
+@'
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Results and patient data: never commit
+output/
+*.zip
+*.nii
+*.nii.gz
+*.npy
+*.npz
+*.dcm
+!dicom_headerfile.dcm
+
+# Editors / OS
+.vscode/
+.idea/
+'@ | Set-Content .gitignore -Encoding ascii

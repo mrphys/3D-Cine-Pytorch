@@ -1,0 +1,22 @@
+# 3D cine project: only the packages the code imports, pinned to the versions in the original
+# "ort-dml" venv. Python 3.10, Windows. Everything else these need is pulled in automatically.
+
+# Headless pipeline (cine3d_headless/), also used by the Streamlit app
+numpy==2.2.6
+scipy==1.15.3
+scikit-image==0.25.2
+pydicom==3.0.1
+pillow==12.1.1
+nibabel==5.4.0
+onnxruntime-directml==1.23.0
+
+# Streamlit app (app.py, utils/process_utils.py)
+streamlit==1.54.0
+imageio==2.37.2
+
+# MPR viewer (cine_mpr_viewer.py)
+vtk==9.6.0
+
+# Tools rather than imports: uncomment the ones you use
+# pyinstaller==6.19.0       # building the .exe
+# ipykernel==7.2.0          # Jupyter / VS Code notebooks
