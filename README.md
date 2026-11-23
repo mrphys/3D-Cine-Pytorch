@@ -1,4 +1,4 @@
-# 3D Cine (headless)
+# 3D Cine Pytorch
 
 Command-line version of the 3D cine Streamlit app. It takes a sagittal real-time cine and runs three ONNX models:
 
