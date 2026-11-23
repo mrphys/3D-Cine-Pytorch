@@ -23,8 +23,6 @@ pip install -r requirements.txt
 
 On Windows this installs `onnxruntime-directml` (GPU through DirectML); on other systems, the CPU build of ONNX Runtime.
 
-The model weights are not in this repository. Put `deband.onnx`, `RespCorTorch-37.onnx` and `E2E-51.onnx` in `models/`, or point `MODELS_DIR` in `config.py` at the folder that has them.
-
 ## Running
 
 Set `DATASET_PATH` in `config.py`, then:
