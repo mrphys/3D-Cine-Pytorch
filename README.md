@@ -12,6 +12,8 @@ The result is saved as per-frame `.npy` volumes, a DICOM series and GIF previews
 
 ## Setup
 
+To install the streamlit app version, simply navigate to releases, download the .exe and install as normal. For code based implementation, see below.
+
 Python 3.10. On Windows (PowerShell), from the repository folder:
 
 ```powershell
